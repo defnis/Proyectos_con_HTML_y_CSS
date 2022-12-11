@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registracion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1>Registracion de Formulario</h1>
+        <p>Complete este formulario para expresar su interes</p>
+        <form>
+            <!-- Detalle de Contacto -->
+            <fieldset class="first-section">
+                <legend>Informacion Personal</legend>
+                <label for="name">Nombre</label>
+                <input autofocus type="text" id="name" autofocus placeholder="Nombre">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Email"><br><br>
+                <label for="text">Telefono</label>
+                <input type="text" id="telefono" placeholder="+54 291 4568789">
+            </fieldset><br>
+            <!-- Informacion Personal -->
+            <fieldset class="second-section">
+                <legend> Informacion Personal</legend>
+                <label for="dob">Fecha de Nacimiento</label>
+                <input type="text" id="dob"><br><br>
+                <label for="gender">Genero</label>
+                <input list="genders" name="gender" id="gender">
+                <datalist id="genders">
+                    <option value="Mujer">
+                    <option value="Varon">
+                    <option value="Otro">
+                </datalist><br><br>
+                <div class="proficiency">
+                    <label for="proficiency">Avance</label>
+                    <input type="range" value="4" max="10" id="proficienty" name="" proficienty>
+                </div>
+            </fieldset>
+
+            <!-- Lenguaje Preferido -->
+            <div class="terms">
+                <input type="checkbox" id="scales" name="scale" class="checkbox">
+                <label for="scales">He leido y agrego los terminos y condiciones de la pagina</label>
+            </div>
+            <button>Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
